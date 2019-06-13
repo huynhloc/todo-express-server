@@ -1,0 +1,31 @@
+{
+  "name": "todo-express-server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "author": "lochuynh",
+  "scripts": {
+    "build": "babel src -s -D -d dist",
+    "start": "node dist/app.js",
+    "dev": "DEBUG=Services:*,Helpers:*,API:*,App:* nodemon --watch src src/app.js --exec babel-node"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^4.19.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-busboy": "0.0.2",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14",
+    "mongoose-int32": "^0.3.0",
+    "query-string": "^6.1.0",
+    "ramda": "^0.26.1",
+    "validator": "^9.4.1"
+  }
+}
